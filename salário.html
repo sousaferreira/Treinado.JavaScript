@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var ht  = parseFloat(window.prompt('Quantas são as horas que você trabalha?'))
+        var vh  = Number(window.prompt('Qual o valor do seu salário? '))
+        var pd  = Number(window.prompt('Qual a porcentagem dos seus descontos? '))
+
+        var sb = ht*vh
+        var td = (pd * sb)/100
+        var sl = sb -td
+        var inss = (sb*9)/100
+
+        window.alert('Suas horas trabalhadas são: ' + ht+ ' O valor do  seu salário é: ' +vh+ ' o percentual de desconto é: ' +pd+ ' o salário bruto é: ' +sb+ ' o total do desconto: '+td+' salário liquido é: '+sl+ ' e o desconto do inss é de 9%, ou seja fica igual à : '+inss )
+    </script>
+</body>
+</html>

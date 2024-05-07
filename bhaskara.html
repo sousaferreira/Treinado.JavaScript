@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>bhaskara</h1>
+    <script>
+        
+    function diferentao(a, b, c, ig) {//função criada para quando a igualdade for diferente de 0
+    var delta_mud = (b * b) - (4 * a * ig);//calculo do delta para quando a igualdade for diferente de 0
+
+    if (delta_mud < 0) { // se o delta for negativo ele ão poderá calcular
+        window.alert('invalida');
+    } else if (delta_mud > 0) {// caso contrário será calculado as raizes do delta
+        var mud = c - ig; //  como a igualdade será diferente de 0 é necessário que ele passe para o outro lad mudando o sinal
+        var x1 = (-b + Math.sqrt(delta_mud)) / (2 * a);// calculo da primeira raiz
+        var x2 = (-b - Math.sqrt(delta_mud)) / (2 * a);// calcullo da segunda raiz
+        window.alert('x1 =' + x1 + ' x2 =' + x2);// mostrar resultado
+    }
+}
+
+function igualzinho(a, b, c, ig) {
+    var delta = (b * b) - (4 * a * c);
+    if (delta < 0) {
+        window.alert('invalida');
+    } else if (delta > 0) {
+        var x11 = (-b + Math.sqrt(delta)) / (2 * a);
+        var x22 = (-b - Math.sqrt(delta)) / (2 * a);
+        window.alert('x1 =' + x11 + ' x2 =' + x22);
+    }
+}
+
+var a = Number(window.prompt('digite a '));
+var b = Number(window.prompt('digite b '));
+var c = Number(window.prompt('digite c '));
+var ig = Number(window.prompt('digite a igualdade '));
+
+if (ig !== 0) {
+    diferentao(a, b, c, ig);
+} else {
+    igualzinho(a, b, c, ig);
+}
+
+    </script>
+    
+</body>
+</html>

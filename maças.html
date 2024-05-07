@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var quant = window.prompt('Você tem quantas maçãs? ')
+        var verdes = window.prompt('Você tem quantas maçãs verdes? ')
+        var vermelhas = window.prompt('Você tem quantas maçãs vermelhas? ')
+
+       if (verdes>2 && verdes === quant){
+        alert('a alternativa é verdadeira')
+       }
+       else if (verdes<2){
+        alert('a alternativa é falsa')
+       }
+       else if ( verdes > quant || vermelhas> quant){
+        alert('a alternativa é incorreto')
+       }
+       else if (verdes<2 || vermelhas > 0){
+        alert('a alternativa é falsa')
+       }
+       
+       
+
+    </script>
+</body>
+</html>

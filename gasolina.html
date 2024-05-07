@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+
+      var op = window.prompt ('Digite 1 caso seu combustível for gasolina, e Digite 1 caso seu combustível for álcool e 0 para sair')
+
+
+      if (op == 1){ 
+      var litros = window.prompt('quantos litros de gasolina vc tem disponivel? ')
+      var km = window.prompt ('quantos kilometros vc pretende pecorrer')
+      var total = litros/km
+        
+      var valor = litros* 2.90
+
+
+      alert ('Você tem disponilvel ' + litros+ " litros de gasolina, você pecorreu "+km+ ' o consumo total é de: ' +total+' e valor total é: '+valor)
+
+
+    }
+
+    else if (op ==2){ 
+      var l = window.prompt('quantos litros de ácool vc tem disponivel? ')
+      var k = window.prompt ('quantos kilometros vc pretende pecorrer')
+      var t = l/k
+        
+      var valora = l* 2.90
+
+
+      alert ('Você tem disponilvel ' + l+ " litros de álcool, você pecorreu "+k+ ' o consumo total é de: ' +t+' e valor total é: '+valora)
+
+
+    }
+
+     
+
+
+
+    </script>
+</body>
+</html>
